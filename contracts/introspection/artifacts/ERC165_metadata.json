@@ -1,0 +1,82 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Matt Condon (@shrugs)",
+			"details": "Implements ERC165 using a lookup table.",
+			"methods": {
+				"constructor": {
+					"details": "A contract implementing SupportsInterfaceWithLookup implement ERC165 itself"
+				},
+				"supportsInterface(bytes4)": {
+					"details": "implement supportsInterface(bytes4) using a lookup table"
+				}
+			},
+			"title": "ERC165"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/introspection/ERC165.sol": "ERC165"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/introspection/ERC165.sol": {
+			"keccak256": "0x27365ee160d384b25def25b96804e2e0dbf5ceb61e7f5699e3093398a84e8670",
+			"urls": [
+				"bzz-raw://1a6391c3838974441c5cdc21091256e19966a966642d2d7e126fb9480d0b1d99",
+				"dweb:/ipfs/QmbDRqfngt5keaa7bFMaGnTjCawNFnBuEKWmqq2Vin6x42"
+			]
+		},
+		"contracts/introspection/IERC165.sol": {
+			"keccak256": "0xdf63d7aacea8107dd1e0bd4c07df71861d24807d0208fdc1125342c6f675c9b1",
+			"urls": [
+				"bzz-raw://527eff2d5c86027594cc33100261cb97bfc25af0dc3925cedd90a142a3a716ea",
+				"dweb:/ipfs/QmYe9LgVEbhooYxfiRfZPuUazyTEC9KQGtmztvgMMcv93d"
+			]
+		}
+	},
+	"version": 1
+}
