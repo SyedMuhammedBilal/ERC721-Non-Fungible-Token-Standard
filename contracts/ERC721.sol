@@ -51,8 +51,17 @@ contract ERC721 is IERC721 {
         _tokenOwner[_tokenId] = _to;
     }
 
-    function exists(uint256 _tokenId) internal view returns (address) {
+    function _exists(uint256 _tokenId) internal view returns (address) {
         address owner = _tokenOwner[_tokenId];
         require(owner != address(0));
+    }
+
+    function _mint(address _to, uint256 _tokenId) internal {
+        require(_to != address(0));
+        
+        _tokenOwner[_tokenId] = _to;
+        _ownedTokenCount[_to] = _ownedTokenCount[_to].add(1);
+
+        emit Transfer(address(0), _to, _tokenId);
     }
 }
